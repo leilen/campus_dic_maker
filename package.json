@@ -1,0 +1,27 @@
+{
+  "name": "campus_maker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/app.js",
+  "scripts": {
+    "build": "webpack -p --mode=production",
+    "pro": "node dist/app.js",
+    "start": "ts-node src/app.ts",
+    "clean": "rm -rf ./dist/* && touch ./dist/.keep"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^12.7.8",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.3",
+    "webpack-cli": "^3.3.9"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "node-html-parser": "^1.2.14",
+    "ts-loader": "^6.2.0",
+    "webpack": "^4.41.0",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
